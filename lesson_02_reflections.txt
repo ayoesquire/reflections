@@ -1,0 +1,48 @@
+05. Reflect: Initializing a Repository
+
+Question:
+What happens when you initialize a repository?
+Answer:
+It creates a new repository in the current directory where the command is run, adding the a hidden folder .git that contains meta data used to track the history of the repo since it was created (see video 031 - What makes a repository a repository?)
+
+Question:
+Why do you need to do it?
+Answer:
+Without initializing a repo, commits cannot be made and changes to files within the directory cannot be tracked.
+Note since this folder is hidden, to view the folder, run 'ls -a'.
+
+08. Reflect: Staging Area
+
+Question:
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+Answer:
+The Staging Area is an intermediate area between the Working Directory and Repository. It offers more control in the sense that it allows one to specify exactly which changes are to be committed.
+
+The Working directory, on the other hand, is bascially the user's hard drive containing the regular files whose changes the user may want to track later.
+
+13. Reflect: Commit Size
+
+Question:
+How can you use the staging area to make sure you have one commit per logical change?
+
+Answer:
+By adding the file to the staging area using 'git add <filename e.g. 'file.txt'>', and comparing the file in the staging area to the most recent commit by running 'git diff --staged'.
+This show which files are in the staging area and what lines have been specifically modified.
+
+16. Reflect: When to use Branches
+
+Question:
+What are some situations when branches would be helpful in keeping your history oranized? How would branches help?
+
+Answer:
+Branches are useful in the some of the followung cases:
+1. When one is making experimental features and want to try out a demo version
+2. In cases when one wants to make versions of the software in other languages
+3. Generally, when one to make a significant change to the  functionality of a project without tampering with the working version of production quality. (See video: Interview with Mike Wales)
+
+And while the linear commit history may be used, however, if for example there is a bug in the tip or node branch of the official from which one want create the branch, then branching makes this easier especially to make a fix in this official version by
+1. Updating this newly updated version
+2. Avoiding overhead resulting from favouring a linear commit history
+3. And finally, creating a label (or branch) for these commits.
+
+Overall, branches help to keep your projects organized.
