@@ -20,7 +20,7 @@ The Staging Area is an intermediate area between the Working Directory and Repos
 
 The Working directory, on the other hand, is bascially the user's hard drive containing the regular files whose changes the user may want to track later.
 
-13. Reflect: Commit Size
+12. Reflect: Commit Size
 
 Question:
 How can you use the staging area to make sure you have one commit per logical change?
