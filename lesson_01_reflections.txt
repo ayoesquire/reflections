@@ -1,0 +1,33 @@
+Question: How did viewing a diff between two versions of file help you see the bug that was introduced?
+
+Answer: By comparing and listing where each line of code differs in the old file from the new file.
+
+Question: How could having easy access to the entire history od a file make you a more efficeint programmer in the long term?
+
+Answers: (1)I can easily keep track of recent and past changes made to my code (2)I can keep record of milestones as I make progress in the project (3)I can easily revert to older versions. 
+
+Question: What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+Answer:
+1. While it may seem that having changes saved automatically may seem covenient or nice, Git system makes it much more likely that each individual version represents a logical change.
+2. Also intuitively, being able to view old version is much more useful if check point is meaningful, i.e. they involve logical changes.
+3. Further more, because Git requires one to supply a Commit message each time a commit is created, this makes looking through old versions much more easy and pleasant than the Google Docs module.
+
+Question: Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+Answers:
+1. The concept of tracking across multiple files is particularly useful in instances where files are connected and thus required to function together. In such situations it becomes necessary to avoid having to track changes to each of these connected files separately. However, this cannot be done in non-code oriented systems like Google Docs.
+
+Question:
+How can you use the commnads git log and git diff to view the history of files?
+
+Answer:
+'git log' command shows the commits that have been made in a git repo, starting with the most recent changes.
+'git diff' command compares a particular commit with a previous one by comparing the code lines that were added or deleted.
+
+Question (26):
+How might using version control make you more confident to make changes that could break something?
+
+Answer:
+Version control gives you the confidence of easily restoring to previous (or more recents) commits before (or after) the bugs where introduced into the code without having to go through troubleshooting thousands of lines of code.
+With version control, you don't have to worry about going back to fix a code that is broken hence giving you the room to explore more ideas and variations to the original code base. [Credits: Lewis Kaneshiro *Udacity Course Developer*]
