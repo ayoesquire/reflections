@@ -48,3 +48,13 @@ And while the linear commit history may be used, however, if for example there i
 4. It helps in keeping your work organised.
 
 Overall, branches help to keep your projects organized.
+
+20. Reflect: Visualizing with Diagram
+
+Question:
+How do the diagrams help you visualize the branch structure?
+
+Answer:
+1. It provides a parent-child relationship in-between commits and with respect to branch names and their respective commits.
+
+2. By extension, this makes it easy to keep track of the commits and figure out whether or not a commmit is reachable from a branch (or HEAD).
