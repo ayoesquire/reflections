@@ -58,3 +58,17 @@ Answer:
 1. It provides a parent-child relationship in-between commits and with respect to branch names and their respective commits.
 
 2. By extension, this makes it easy to keep track of the commits and figure out whether or not a commmit is reachable from a branch (or HEAD).
+
+25. Reflect: Merging Two Branches
+
+Question
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Answer
+When two branches are merge together, the contents of the newly created commit (which is now the tip of one of the branches, most preferably the master) will include all the changes from both branches. Not only is this new commit updated to include these changes from the two branches, you also have access to the old commits of each of these branches involved in the merge.
+
+This is quite different from what we would see if we took the state of files at the tip of say the coins branch (i.e. 'ships on coins') and made a commit with thhat on top of master by adding that file or commit whilst checked out in master branch. All this would do is set master to be in the same state as coins.
+
+This is the reason we represent it in the diagram so as to provide a visual sense of which commits are included in the merging. 
+
+Also, if a branch (label) is deleted, leaving some commits unreachable from the existing branches, those commits will contine to be accessible by commit id, until Git's garbage collection runs, which is quite different from just update a branch, say master, to the state of files, in another branch, say coins.
