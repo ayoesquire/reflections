@@ -72,3 +72,15 @@ This is quite different from what we would see if we took the state of files at 
 This is the reason we represent it in the diagram so as to provide a visual sense of which commits are included in the merging. 
 
 Also, if a branch (label) is deleted, leaving some commits unreachable from the existing branches, those commits will contine to be accessible by commit id, until Git's garbage collection runs, which is quite different from just update a branch, say master, to the state of files, in another branch, say coins.
+
+32. Reflect: Automatic vs. Manual Merging
+
+Question
+What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+
+Answer
+With automatic merging, git performs the merging for you based on the orginal versions of the file.
+However, if the orginal files were deleted (i.e. not found), then Git reverts to the manual approach which provides users with the advantage of determining whether or not they would like to keep certain versions of the modified file(s), probably the ones which are more memory efficient or faster.
+
+Further more, Git assumes that if you are merging together two commits that have changes in the same general area, the authors will want to know about it and have the chance to decide for themselves whether or not to keep the changes. 
+This way one can also avoid weird conglomerate changes that don't really make any sense and will not compile or run. (Courtesy Udacity lecture video).
