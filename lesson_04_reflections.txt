@@ -1,0 +1,5 @@
+Question:
+When would you want to use a remote repository rather than keeping all your work local?
+
+Answer:
+I would use remote repository when I want to push changes (commits) from my local repository (i.e. on my computer) to my GitHub repository (i.e. on the GitHub website)
